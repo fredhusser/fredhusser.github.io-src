@@ -1,0 +1,7 @@
+[submodule "pelican/pelican-bootstrap3"]
+	path = pelican/pelican-bootstrap3
+	url = https://github.com/DandyDev/pelican-bootstrap3.git
+
+[submodule "output"]
+	path = output
+	url = https://github.com/fredhusser/fredhusser.github.io.git

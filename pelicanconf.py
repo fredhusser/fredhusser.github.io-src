@@ -7,7 +7,7 @@ SITENAME = u'Data Science for collective intelligence'
 SITEURL = ''
 
 PATH = 'content'
-
+THEME = './pelican/pelican-bootstrap3'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
