@@ -2,6 +2,6 @@
 	path = pelican/pelican-bootstrap3
 	url = https://github.com/DandyDev/pelican-bootstrap3.git
 
-[submodule "output"]
-	path = output
-	url = https://github.com/fredhusser/fredhusser.github.io.git
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
