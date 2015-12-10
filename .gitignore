@@ -1,0 +1,5 @@
+*.py[cod]
+Thumbs.db
+
+/output
+/.idea
