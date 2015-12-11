@@ -1,19 +1,18 @@
-Title: Part 1 - How to set up a development environment for data analysis in python
+Title: Part 1 - Set-up of a development environment for Python Data Analysis with Vagrant, Docker and Anaconda
 Date: 2015-12-10 12:00
 Category: Python
 Tags: Vagrant, Docker, Python
 Slug: development-environment
 Authors: Frederic Husser
-Summary: Set-up of a virtual development environment
+Summary: We will fire up a virtual development environment using state-of-art tools for making data analysis in Python. We will use both Vagrant and Docker for firing up a Linux virtual machine with all tools ready for Python data analysis. Preparing the Python environment is sometimes hard for scientists without a strong background in software development, this is wy having a reproducible and turnkey workflow is so important. Additionally when it comes to collaboration, the installation of the Python interpreters as well as all the needed packages can become a real pain. With virtual environment, you are making sure that everybody is working under the same settings.
 
-In this first tutorial, we are making sure that all the tools are set up for doing some data analysis in Python. Some developers might be working on Linux, Mac or sometimes on Windows. Programming with Python on Windows is a real pain, but a debate on the OS is out of the scope of this blog.
-
-Instead, we will focus on making the environment totally agnostic on your choice and habits. We will use Vagrant for creating and configuring a linux Ubuntu virtual machine. From the Vagrant configuration file (the vagrantfile), we make sure that the virtual machine is provisioned with all dependencies we will need for developing our machine learning and web applications.
+In this tutorial, we build an environment with Vagrant, Docker and Anaconda for doing firstly data analysis in Python. It should be totally agnostic on the choice of your operating system, be it Linux, Mac or Windows. Vagrant is used for configuring the linux Ubuntu virtual machine. The vagrant file located at the root of the project directory contains all the settings for that VM so that it can boot with all dependencies provisioned 
 
 Before starting make sure that you do have this three softwares installed on your machine:
--   VirtualBox
--   Vagrant
--   Git
+
+- VirtualBox
+- Vagrant
+- Git
 
 Configuring a Linux Ubuntu machine
 ----------------------------------
@@ -93,11 +92,12 @@ Using Docker for our database and web application
 -------------------------------------------------
 
 Now we are almost ready to develop our machine learning application ! We also want to have a MongoDB and Postgres SQL instances running, as well as a web application (in Python of course!). We will use Docker and Docker-Compose for that and build a multi-container application. Basically we want to have:
-- A MongoDB server that will be accessible on the localhost of our VM, in which we will store our collected data and the outputs of the machine learning tasks;
-- A PostgresSQL server that will support our web application data;
-- A Flask back-end for our application, which we will use for communicating our results to the outside world;
-- An nginx service to forward requests either to the Flask app or the static files;
-- Some data-only containers that will back-up the data from the database services.
+
++ A MongoDB server that will be accessible on the localhost of our VM, in which we will store our collected data and the outputs of the machine learning tasks;
++ A PostgresSQL server that will support our web application data;
++ A Flask back-end for our application, which we will use for communicating our results to the outside world;
++ An nginx service to forward requests either to the Flask app or the static files;
++ Some data-only containers that will back-up the data from the database services.
 
 Check out this blog post from [Real Python](https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/) that brillantly explains the process of building a muti-container application with flask, and from which we got inspired to build the docker-compose.yml file:
 
