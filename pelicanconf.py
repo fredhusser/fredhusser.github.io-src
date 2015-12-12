@@ -7,7 +7,7 @@ SITENAME = u'Data Science for collective intelligence'
 SITEURL = ''
 
 PATH = 'content'
-THEME = './pelican/pelican-bootstrap3'
+THEME = './pelican/pure'
 # Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = ['images', 'static/css/bootstrap.flatly.min.css']
 CUSTOM_CSS = 'static/css/bootstrap.spacelab.min.css'

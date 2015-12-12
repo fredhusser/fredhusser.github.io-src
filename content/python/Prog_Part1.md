@@ -93,13 +93,13 @@ Using Docker for our database and web application
 
 Now we are almost ready to develop our machine learning application ! We also want to have a MongoDB and Postgres SQL instances running, as well as a web application (in Python of course!). We will use Docker and Docker-Compose for that and build a multi-container application. Basically we want to have:
 
-+ A MongoDB server that will be accessible on the localhost of our VM, in which we will store our collected data and the outputs of the machine learning tasks;
-+ A PostgresSQL server that will support our web application data;
-+ A Flask back-end for our application, which we will use for communicating our results to the outside world;
-+ An nginx service to forward requests either to the Flask app or the static files;
-+ Some data-only containers that will back-up the data from the database services.
++ A **MongoDB** server that will be accessible on the localhost of our VM, in which we will store our collected data and the outputs of the machine learning tasks;
++ A **PostgresSQL** server that will support our web application data;
++ A **Flask** back-end for our application, which we will use for communicating our results to the outside world;
++ An **nginx** service to forward requests either to the Flask app or the static files;
++ Some **data-only containers** that will back-up the data from the database services.
 
-Check out this blog post from [Real Python](https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/) that brillantly explains the process of building a muti-container application with flask, and from which we got inspired to build the docker-compose.yml file:
+Check out this blog post from [Real Python](https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/) which explains the process of building a muti-container application with flask, and from which we got inspired to build the docker-compose.yml file:
 
 ```yml
 mongo:
