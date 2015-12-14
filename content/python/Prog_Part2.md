@@ -8,7 +8,7 @@ Summary: In this second part of our series, we will crawl the news website www.l
 
 ## Quick start with Scrapy
 
-We will work on our virtual machine as defined in the previous part. The code that we will go through is available in the GitHub repository under the worker_scrapy subdirectory. If the VM is not running just type `vagrant up` and then `vagrant ssh` while being at the root of the project.
+We will work on our virtual machine as defined in the previous part. The code that we will go through is available in the [GitHub repository](https://github.com/fredhusser/collective_intelligence) under the worker_scrapy subdirectory. If the VM is not running just type `vagrant up` and then `vagrant ssh` while being at the root of the project. Consult this [post]({filename}Prog_Part1.md) for learning how to create this VM using Vagrant.
 
 Since Scrapy will require some additional packages it is convenient to use a virtual python environment dedicated to our Scrapy worker. For doing this we will simply use the Conda package manager, and type in the terminal:
 

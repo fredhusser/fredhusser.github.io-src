@@ -1,7 +1,7 @@
-Title: Part 1 - Set-up of a development environment for Python Data Analysis with Vagrant, Docker and Anaconda
+Title: Part 1 - Python Data Analysis environment with Vagrant, Docker and Anaconda
 Date: 2015-12-10 12:00
 Category: Python
-Tags: Vagrant, Docker, Python
+Tags: Vagrant, Docker, Python, Anaconda
 Slug: development-environment
 Authors: Frederic Husser
 Summary: We will fire up a virtual development environment using state-of-art tools for making data analysis in Python. We will use both Vagrant and Docker for firing up a Linux virtual machine with all tools ready for Python data analysis. Preparing the Python environment is sometimes hard for scientists without a strong background in software development, this is wy having a reproducible and turnkey workflow is so important. Additionally when it comes to collaboration, the installation of the Python interpreters as well as all the needed packages can become a real pain. With virtual environment, you are making sure that everybody is working under the same settings.

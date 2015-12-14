@@ -1,5 +1,5 @@
-Title: Part 0 - Collective intelligence in Python: introduction
-Date: 2015-12-10 12:00
+Title: Part 0 - Introduction to Programming Collective in Python
+Date: 2015-12-09 12:00
 Category: Python
 Tags: dev environment, Machine Learning, Agile Data Science
 Slug: introduction-collective-intelligence
@@ -39,21 +39,23 @@ Finally, we want to offer to users the capability to browse quickly in the docum
 In the first iteration we will tackle the issue of semantic analysis for classifying documents based on their content. In order to achieve this goal we will operate in an agile manner so that we complete the following steps the fastest possible.
 
 1. **Environment set-up**
-We will set up a reproducible development environment, with all the basic tools and frameworks we are going to need. For this we will be using Vagrant for taking care of our virtual machine on which to run Python scripts and Docker containers.
 
+    We will set up a reproducible development environment, with all the basic tools and frameworks we are going to need. For this we will be using Vagrant for taking care of our virtual machine on which to run Python scripts and Docker containers.
+    
 2. **Data Collection**
-Then some input data will be scraped from the web in order to have a collection of articles on which to perform some analysis. We will use Scrapy, a web scraper in made in Python, to help us crawling articles from [*www.lemonde.fr*](http://www.lemonde.fr).
+
+    Then some input data will be scraped from the web in order to have a collection of articles on which to perform some analysis. We will use Scrapy, a web scraper in made in Python, to help us crawling articles from [*www.lemonde.fr*](http://www.lemonde.fr).
 
 3. **Data analytics and text mining**
-Here is the hard work! Standing on the shoulder of giants like Numpy, NLTK and Scikit-Learn, we will build a document classification algorithm based on semantic analysis and self-organizing maps. We will rely a lot on the existing algorithms for natural language processing (NLP) such as in Scikit-Learn and NLTK, and we will eventually build our own self-organizing map classifier in Python.
+
+    Here is the hard work! Standing on the shoulder of giants like Numpy, NLTK and Scikit-Learn, we will build a document classification algorithm based on semantic analysis and self-organizing maps. We will rely a lot on the existing algorithms for natural language processing (NLP) such as in Scikit-Learn and NLTK, and we will eventually build our own self-organizing map classifier in Python.
 
 4. **Data visualization and browsing**
-Building a light weight web application with Flask and pymongo, we will make possible to data scientists to communicate on their results, with a step-by-step workflow.
 
-  + Present atomic records or chunks of the data; in our case it will be the news articles crawled from lemonde.fr. This step is really important to complete so that you can also evaluate the quality of your raw data. Keep the iteration based mindset.
-
-  + Build data visualizations for presenting the results of your analysis, enabling the user to understand the full scope of it. We want also to make the data scientists able to evaluate the quality of the analysis they performed with an objective point of view.
-  
-  + Create reports that convey a message understandable by your audience. These reports are based on the analysis you conducted. For instance, what are the hot topics, the most transversal articles or the most specific ones? The value of your analysis is derived from the insight on the data it can give and the actions that can be taken.
+    Building a light weight web application with Flask and pymongo, we will make possible to data scientists to communicate on their results, with a step-by-step workflow.
+    
+    + Present atomic records or chunks of the data; in our case it will be the news articles crawled from lemonde.fr. This step is really important to complete so that you can also evaluate the quality of your raw data. Keep the iteration based mindset.
+    + Build data visualizations for presenting the results of your analysis, enabling the user to understand the full scope of it. We want also to make the data scientists able to evaluate the quality of the analysis they performed with an objective point of view.
+    + Create reports that convey a message understandable by your audience. These reports are based on the analysis you conducted. For instance, what are the hot topics, the most transversal articles or the most specific ones? The value of your analysis is derived from the insight on the data it can give and the actions that can be taken.
 
 
