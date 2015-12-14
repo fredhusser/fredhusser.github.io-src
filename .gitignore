@@ -1,7 +1,7 @@
 *.py[cod]
 Thumbs.db
 
-output/*
+output
 /venv
 /.idea
 /pelican-plugins
