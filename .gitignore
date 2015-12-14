@@ -2,6 +2,6 @@
 Thumbs.db
 
 /venv
-/output
+output
 /.idea
 /pelican-plugins
