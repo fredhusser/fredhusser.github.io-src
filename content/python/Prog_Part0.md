@@ -7,6 +7,7 @@ Authors: Frederic Husser
 Summary: Introduction to agile text mining with python: this post starts a series covering a full text mining workflow on information, from the collection of text documents, their classification using machine learning techniques and the presentation in a light weight web application. The workflow features for a large part the workflow well explained in details in the books [*Agile Data Science*] by Russel Jurney.
 
 This blog is also meant to be a recipe for data scientists and physicists who want to be able to present and communicate about their work, so that their algorithms and analysis do not sleep forever deep in their GitHub account.
+The series of posts we are starting here is a guide book of [this GitHub repository](https://github.com/fredhusser/collective-intelligence). Programmers having an account on GitHub are mostly welcome to fork it.
 
 ## So what are the goals we want to pursue?
 

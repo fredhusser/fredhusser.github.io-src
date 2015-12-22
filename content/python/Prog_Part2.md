@@ -1,7 +1,7 @@
 Title: Part 2 - Crawling a news website in Python with Scrapy and MongoDB
 Date: 2015-12-11 12:00
 Category: Python
-Tags: Scrapy, MongoDB, Python
+Tags: Scrapy, MongoDB, Virtual environment, Python
 Slug: web-crawling
 Authors: Frederic Husser
 Summary: In this second part of our series, we will crawl the news website www.lemonde.fr with Scrapy for collecting a set of news articles, and store them in a MongoDB store. Scrapy is very easy to fire up and has a steep learning curve. We make profit of this to be able to start quickly our text mining activities on real data sets. With real data we mean data from a real use case. There are well known datasets such as the 20newsgroup reuters dataset of labelled documents. In our case, we want to learn to be confronted to unlabelled datasets, in any language.

@@ -15,6 +15,12 @@ SITESUBTITLE = u'Machine Learning in Python'
 ARTICLE_PATHS=['python']
 STATIC_PATHS = ['python']
 
+PLUGIN_PATHS = [u'./pelican-plugins']
+PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
+           'liquid_tags.youtube', 'liquid_tags.vimeo',
+           'liquid_tags.include_code',
+           'liquid_tags.notebook',
+           ]
 
 # Minified CSS
 NEST_CSS_MINIFY = False
@@ -108,9 +114,10 @@ LINKS = (('Home', '#'),
          )
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/fredhusser'),
+          ('twitter', 'http://twitter.com/fredhusser'),
+          ('linkedIn', 'https://fr.linkedin.com/in/frédéric-husser-29bb0717'),
           )
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+

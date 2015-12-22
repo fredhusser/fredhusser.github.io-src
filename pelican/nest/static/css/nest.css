@@ -21,6 +21,9 @@
   }
 }
 
+img, div.figure { max-width: 50%; height: auto; }
+
+
 /* Default styling */
 body {
     font-family: "Open Sans", sans-serif;
